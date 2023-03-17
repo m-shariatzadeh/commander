@@ -1,0 +1,23 @@
+{
+    "name": "m-shariatzadeh/commander",
+    "description": "This package able to run commands in terminal",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MOSTAFA SHARIATZADEH",
+            "email": "shrytzadh@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "MShariatzadeh\\Commander\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
