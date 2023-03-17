@@ -2,6 +2,7 @@
 
 namespace MShariatzadeh\Commander;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
 
 class CommanderServiceProvider extends ServiceProvider
@@ -13,6 +14,8 @@ class CommanderServiceProvider extends ServiceProvider
 
     public function register()
     {
-
+        App::bind('commander',function () {
+            return new \MShariatzadeh\Commander\Commander();
+        });
     }
 }

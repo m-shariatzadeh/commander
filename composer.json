@@ -10,7 +10,6 @@
         }
     ],
     "require": {},
-
     "autoload": {
         "psr-4": {
             "MShariatzadeh\\Commander\\": "src/"
@@ -18,6 +17,16 @@
         "files": [
             "src/helpers.php"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MShariatzadeh\\Commander\\CommanderServiceProvider"
+            ],
+            "aliases": {
+                "Commander": "MShariatzadeh\\Commander\\Facade"
+            }
+        }
     },
     "minimum-stability": "dev"
 }
